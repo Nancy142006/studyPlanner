@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Sun, Moon, Settings, Menu, X } from "lucide-react";
+import Lottie from "lottie-react";
+import wavingHand from "./animations/wavingHand.json"
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -92,11 +94,21 @@ function App() {
       </div>
 
       {/* Main Content */}
-      <main className="p-4">
-        <h2 className="text-2xl font-semibold">
-          Welcome to your Study Planner!
+      <main
+        className={`flex-1 transition-all duration-300 ease-in-out ${
+          sidebarOpen ? "ml-64" : "ml-16"
+        } p-6`}
+      >
+        <h2 className="text-2xl font-semibold flex items-center space-x-2">
+          <Lottie
+            animationData={wavingHand}
+            loop={true}
+            className="w-12 h-12" // size of the hand animation
+          />
+          <span>Welcome to your Study Planner!</span>
         </h2>
-        <p className="mt-2 text-gray-600 dark:text-gray-300">
+
+        <p className="mt-2 text-gray-600 dark:text-gray-300 ml-20">
           Start planning your study schedule here.
         </p>
       </main>

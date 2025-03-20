@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        classy: ['"Playfair Display"', "serif"], // Add a custom name here
+      },
+    },
   },
   plugins: [],
 };
