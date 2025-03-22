@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import tigerAnimation from "./animations/tigerAnimation.json"; // Replace with your Lottie file!
+import tigerAnimation from "../animations/tigerAnimation.json"
 
 const FloatingAnimalGreeting = ({ onClose }) => {
   return (
