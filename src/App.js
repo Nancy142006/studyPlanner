@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Sun, Moon, Settings, Menu, X } from "lucide-react";
 import Lottie from "lottie-react";
 import wavingHand from "./animations/wavingHand.json"
+import tigerAnimation from "./animations/tigerAnimation.json"
 import FloatingAnimalGreeting from "./components/FloatingAnimalGreeting";
 
 function App() {
