@@ -8,6 +8,16 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [showGreeting, setShowGreeting] = useState(true);
+  const affirmations = [
+  "You are capable of amazing things! 🌟",
+  "Believe in yourself, you've got this! 💪",
+  "Every step counts, keep going! 🐾",
+  "You're smarter than you think! 🧠",
+  "Stay positive, work hard, make it happen! ✨",
+];
+const randomAffirmation =
+  affirmations[Math.floor(Math.random() * affirmations.length)];
+
 
   return (
     <div className="relative min-h-screen bg-white dark:bg-gray-900">
