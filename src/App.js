@@ -129,6 +129,19 @@ const randomAffirmation =
             <p className="mt-2 text-gray-600 dark:text-gray-300 ml-20">
               Start planning your study schedule here.
             </p>
+            {/* Tiger Animation Below the Paragraph */}
+            <div className="mt-10 flex flex-col items-center">
+              <Lottie
+                animationData={tigerAnimation}
+                loop={true}
+                className="w-64 h-64"
+              />
+
+              {/* Random Affirmation Text */}
+              <p className="text-xl font-semibold text-center mt-4 animate-fadeIn">
+                {randomAffirmation}
+              </p>
+            </div>
           </main>
         </div>
       </div>
