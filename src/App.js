@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { Sun, Moon, Settings, Menu, X } from "lucide-react";
-import Lottie from "lottie-react";
+import { useState } from "react"; 
+import { Sun, Moon, Settings, Menu, X } from "lucide-react"; //icon library
+import Lottie from "lottie-react"; //component to render .json animation files
 import wavingHand from "./animations/wavingHand.json"
 import tigerAnimation from "./animations/tigerAnimation.json"
 import FloatingAnimalGreeting from "./components/FloatingAnimalGreeting";
@@ -16,8 +16,7 @@ function App() {
   "You're smarter than you think! 🧠",
   "Stay positive, work hard, make it happen! ✨",
 ];
-const randomAffirmation =
-  affirmations[Math.floor(Math.random() * affirmations.length)];
+const randomAffirmation = affirmations[Math.floor(Math.random() * affirmations.length)];
 
 
   return (
