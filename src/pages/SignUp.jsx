@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -56,15 +57,25 @@ function SignUp() {
               type="password"
               id="password"
               value={password}
-              onChange={(e)=>setPassword(e.target.value)}
+              onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter your password"
               required
               className="mt-1 w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
             />
           </div>
-          <button type="submit">SignUp</button>
+          <button
+            type="submit"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition duration-200"
+          >
+            SignUp
+          </button>
         </form>
-        <p>Already have an account? Login</p>
+        <p className="mt-4 text center text-sm text-gray-600 dark:text-gray-400">
+          Already have an account?{" "}
+          <span className="text-blue-600 hover:underline cursor-pointer">
+            <Link>Login</Link>
+          </span>
+        </p>
       </div>
     </div>
   );
